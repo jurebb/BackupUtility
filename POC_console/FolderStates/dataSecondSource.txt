@@ -1,7 +1,0 @@
-{
-  "ChangedState": false,
-  "CurrentHash": "D41D8CD98F00B204E9800998ECF8427E",
-  "SourceName": "SecondSource",
-  "SourceDir": "C:\\Users\\Jure Baban\\Documents\\backupTest\\SecondSource",
-  "BackupCount": 1
-}
