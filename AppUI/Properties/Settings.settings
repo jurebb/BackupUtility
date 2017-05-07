@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AppUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="numOfBackups" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="backupDestinationDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Jure Baban\Documents\backupTest\dest</Value>
+    </Setting>
+    <Setting Name="sourceDir1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Jure Baban\Documents\backupTest\FirstSource</Value>
+    </Setting>
+    <Setting Name="sourceDir2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Jure Baban\Documents\backupTest\SecondSource</Value>
+    </Setting>
+    <Setting Name="sourceDir3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="numOfSources" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="scheduler1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">15,45 * * * * ?</Value>
+    </Setting>
+    <Setting Name="scheduler2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,30 * * * * ?</Value>
+    </Setting>
+    <Setting Name="scheduler3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="continueBackupOnError" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
