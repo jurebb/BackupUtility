@@ -1,5 +1,6 @@
 ﻿using AppUI.Commands;
 using AppUI.Models;
+using Hardcodet.Wpf.TaskbarNotification;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 

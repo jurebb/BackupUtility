@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace AppUI
 {
@@ -27,5 +28,10 @@ namespace AppUI
             InitializeComponent();
             DataContext = new SettingsViewModel();
         }
+
+        //protected override void OnClosing(CancelEventArgs e)
+        //{
+        //    this.IsVisible = false;
+        //}
     }
 }
