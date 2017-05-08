@@ -14,14 +14,18 @@ namespace BackupUtilityLib
 {
     public class Scheduler
     {
+        public Scheduler()
+        {
+        }
+
         public static List<IScheduler> scheds = new List<IScheduler>();
 
-        static void Main(string[] args)
+        void Main(string[] args)
         {
             Test();
         }
 
-        public static void Test()
+        public void Test()
         {
             string[] sources = BackupSources.SourceDirs;
             string[] cronScheds = BackupSources.Schedulers;
@@ -56,14 +60,16 @@ namespace BackupUtilityLib
             }
         }
 
-        public static void Shutdown()
+        public void Shutdown()
         {
             int j = 0;
             foreach (IScheduler sched in scheds)
             {
-                sched.Shutdown(true);
+                //sched.Shutdown(true);
+                sched.Clear();
                 j++;
             }
+            scheds.Clear();
         }
     }
 }

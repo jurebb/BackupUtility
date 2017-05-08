@@ -22,6 +22,7 @@ namespace AppUI.Commands
 
         public void Execute(object parameter)
         {
+            RunBackupCommand.RunBackupButtonEnabled = true;
             _viewModel.SaveChanges();
         }
     }

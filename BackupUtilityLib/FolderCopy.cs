@@ -104,5 +104,6 @@ namespace BackupUtilityLib
                 log.ErrorFormat("Error with the backup operation");
             }
         }
+
     }
 }

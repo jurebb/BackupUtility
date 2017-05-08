@@ -11,8 +11,8 @@ namespace AppUI.ViewModels
         Settings _settings;
         public ObservableCollection<string> NumOfSourcesEntries { get; private set; }
         public ObservableCollection<string> ContinueBackupOnErrorEntries { get; private set; }
-        
-
+        public BackupUtilityLib.Scheduler backupVar;
+            
         public SettingsViewModel()
         {
             NumOfSourcesEntries = new ObservableCollection<string>
@@ -70,6 +70,11 @@ namespace AppUI.ViewModels
 
         public void SaveChanges()
         {
+            if(backupVar != null)
+            {
+                backupVar.Shutdown();
+            }
+
             Properties.Settings.Default.numOfSources = _settings.NumOfSources;
             Properties.Settings.Default.numOfBackups = _settings.NumOfBackups;
             Properties.Settings.Default.backupDestinationDir = _settings.BackupDestinationDir;
@@ -86,7 +91,9 @@ namespace AppUI.ViewModels
 
         public void RunBackupUtility()
         {
-            BackupUtilityLib.Scheduler.Test();
+            //BackupUtilityLib.Scheduler.Test();
+            backupVar = new BackupUtilityLib.Scheduler();
+            backupVar.Test();
         }
     }
 }

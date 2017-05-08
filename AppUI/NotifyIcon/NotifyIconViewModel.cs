@@ -54,7 +54,14 @@ namespace AppUI.NotifyIcon
                 get
                 {
                     //return new DelegateCommand { CommandAction = () => Application.Current.Shutdown() };
-                    return new DelegateCommand { CommandAction = () => Environment.Exit(0) };
+                    return new DelegateCommand
+                    {
+                        CommandAction = () => 
+                        {
+                            //TODO BackupUtilityLib.Scheduler.Shutdown();
+                            Environment.Exit(0);
+                        }
+                    };
                 }
             }
         }
