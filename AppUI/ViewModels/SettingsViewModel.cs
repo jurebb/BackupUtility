@@ -90,7 +90,6 @@ namespace AppUI.ViewModels
 
         public void RunBackupUtility()
         {
-            //BackupUtilityLib.Scheduler.Test();
             backupVar = new BackupUtilityLib.Scheduler();
             backupVar.Test();
         }
