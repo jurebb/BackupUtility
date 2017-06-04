@@ -42,7 +42,6 @@ namespace AppUI.ViewModels
                 IsContinueBackupOnError = Properties.Settings.Default.continueBackupOnError
             };
             
-            SaveCommand = new SaveSettingsCommand(this);
             RunBackup = new RunBackupCommand(this);
         }
 

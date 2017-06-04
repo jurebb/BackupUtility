@@ -34,6 +34,7 @@ namespace AppUI.Commands
         public void Execute(object parameter)
         {
             RunBackupButtonEnabled = false;
+            _viewModel.SaveChanges();
             _viewModel.RunBackupUtility();
         }
     }

@@ -82,7 +82,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Commands\RunBackupCommandcs.cs" />
-    <Compile Include="Commands\SaveSettingsCommand.cs" />
     <Compile Include="Models\Settings.cs" />
     <Compile Include="NotifyIcon\NotifyIconViewModel.cs" />
     <Compile Include="ViewModels\SettingsViewModel.cs" />

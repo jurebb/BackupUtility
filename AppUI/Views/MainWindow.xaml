@@ -28,10 +28,9 @@
         <TextBox x:Name="Scheduler2" HorizontalAlignment="Left" Height="23" Margin="226,271,0,0" TextWrapping="Wrap" Text="{Binding Settings.Scheduler2, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="379"/>
         <Label x:Name="label10" Content="Cron schedule for source (3):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,302,0,0"/>
         <TextBox x:Name="Scheduler3" HorizontalAlignment="Left" Height="23" Margin="226,302,0,0" TextWrapping="Wrap" Text="{Binding Settings.Scheduler3, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="379"/>
-        <Button x:Name="SaveChanges" Content="Save changes" Command="{Binding SaveCommand}" HorizontalAlignment="Left" Margin="503,387,0,0" VerticalAlignment="Top" Width="102"/>
         <ComboBox x:Name="ContinueBackupOnError" ItemsSource="{Binding Path=ContinueBackupOnErrorEntries}" SelectedValue="{Binding Settings.ContinueBackupOnError, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="485,332,0,0" VerticalAlignment="Top" Width="120"/>
 
-        <Button x:Name="RunBackup" Command="{Binding RunBackup}" Content="Run" HorizontalAlignment="Left" Margin="409,387,0,0" VerticalAlignment="Top" Width="75"/>
-        
+        <Button x:Name="RunBackup" Command="{Binding RunBackup}" Content="Save and Run" HorizontalAlignment="Left" Margin="509,387,0,0" VerticalAlignment="Top" Width="96"/>
+
     </Grid>
 </Controls:MetroWindow>
